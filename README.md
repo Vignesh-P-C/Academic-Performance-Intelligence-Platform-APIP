@@ -8,6 +8,10 @@ The system is designed incrementally with a strong focus on **clean architecture
 
 ---
 
+🌐 Live Demo: https://apip-dashboard.vercel.app/
+
+---
+
 ## 🎯 Core Product Philosophy
 
 This is **not** a marks viewer.
