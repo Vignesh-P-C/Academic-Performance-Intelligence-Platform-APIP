@@ -1,138 +1,70 @@
-# Academic-Performance-Intelligence-Platform-APIP-
+# 📘 Academic Performance Intelligence Platform (APIP)
+**Version:** v1.0.0  
 
-📘 Academic Performance Intelligence Platform (APIP)
+A browser-based **role-based academic analytics dashboard** built with **React 18, TypeScript, and Zustand**.  
+The platform transforms static academic results into **actionable decision intelligence** for Students, Faculty, and HODs.
 
-A role-based academic analytics dashboard built with React 18, TypeScript, and Zustand.
-Transforms raw academic results into actionable decision intelligence for Students, Faculty, and HODs with live GPA recomputation, performance heatmaps, and strict role-based data scoping.
+The system is designed incrementally with a strong focus on **clean architecture, deterministic analytics, real-time recomputation, and SaaS-grade UX polish**.
 
-🔗 Live Demo
+---
 
-(Add your Vercel link here once deployed)
-Example: https://academic-intelligence.vercel.app
+## 🎯 Core Product Philosophy
 
-🎯 Product Vision
+This is **not** a marks viewer.
 
-This is not a marks viewer.
+APIP is built to answer role-specific decision questions:
 
-APIP is designed as a decision-support platform for academic stakeholders:
+| Role      | Primary Question |
+|-----------|-----------------|
+| Student   | Where am I underperforming and how can I improve? |
+| Faculty   | How is my subject performing across the class? |
+| HOD       | Which subjects or faculty require intervention? |
 
-Role	Core Question Answered
-Student	Where am I underperforming and by how much?
-Faculty	How is my subject performing across the class?
-HOD	Which subjects or faculty require intervention?
+All intelligence is computed **client-side** using a pure TypeScript analytics engine.
 
-The system converts academic data into structured intelligence using a fully client-side analytics engine.
+---
 
-🧠 Architecture Overview
-Frontend Stack
+## 📊 Current Platform Features
 
-React 18
+- Role-based authentication system:
+  - Student login via Registration Number
+  - Faculty login via scoped institutional email
+  - HOD administrative login
+- Live GPA recomputation engine
+- SGPA / CGPA calculation (credit-weighted)
+- Automatic fail logic for attendance < 75%
+- Real-time rank recalculation
+- Subject-level grade distribution analytics
+- Performance heatmap (50 × 5 optimized grid)
+- Faculty mark editing with instant analytics recompute
+- CSV export (client-side Blob API)
+- Strict route-level and data-level permission enforcement
+- Light / Dark theme persistence
+- Smooth sidebar collapse animation (60fps)
+- Skeleton loading states
 
-TypeScript (strict mode)
+---
 
-Vite
+## 🧠 Architecture Highlights
 
-TailwindCSS
+- Pure TypeScript analytics engine (`analytics.ts`)
+- Deterministic grade computation rules
+- Zustand-powered global state management
+- Store-driven recomputation lifecycle
+- Clean separation of:
+  - Data
+  - State
+  - Analytics
+  - UI
+- Human-maintainable 8-file architecture
+- No backend dependencies
+- Fully client-side deployment
 
-Zustand (global state management)
+---
 
-Recharts (data visualization)
+## 🧩 Project Structure
 
-Framer Motion (animation system)
-
-Design Principles
-
-Role-based permission enforcement
-
-Pure analytics engine (no UI dependencies)
-
-Deterministic recomputation lifecycle
-
-Clean separation of data, state, analytics, and UI
-
-Production-grade SaaS layout structure
-
-🔁 Data Flow & Recompute Lifecycle
-
-Faculty mark edit →
-Zustand mutation →
-Analytics engine recomputes grades, SGPA, CGPA, ranks →
-Derived dashboards update in the same render cycle.
-
-No page refresh. No backend. Fully reactive.
-
-All academic computations follow strict rule enforcement:
-
-Attendance < 75% → Automatic fail
-
-Grade scale mapped to 10-point system
-
-SGPA & CGPA computed via credit-weighted formula
-
-Rank recalculated on every mutation
-
-🔐 Role-Based Access Control
-Student
-
-View own performance
-
-SGPA / CGPA tracking
-
-Weak subject detection
-
-Rank history
-
-No edit access
-
-Faculty
-
-Scoped to assigned subject
-
-Edit internal, external, and attendance
-
-Instant recomputation across class
-
-Restricted from other subjects
-
-403 on unauthorized routes
-
-HOD
-
-Department-level overview
-
-Subject comparison analytics
-
-Faculty performance insights
-
-Performance heatmap (50 × 5 grid)
-
-CSV export capability
-
-All access is session-scoped and enforced at route and data level.
-
-📊 Key Features
-
-Live GPA recomputation engine
-
-Performance heatmap (250 optimized cells)
-
-Grade distribution analytics
-
-Weak subject alerts
-
-Subject comparison dashboard
-
-Faculty performance tracking
-
-CSV export (client-side Blob API)
-
-Light/Dark theme persistence
-
-Sidebar collapse animation (60fps)
-
-Skeleton loading states
-
-🧩 Project Structure
+```bash
 src/
 ├── main.tsx
 ├── App.tsx
@@ -142,75 +74,78 @@ src/
 ├── components.tsx
 ├── dashboards.tsx
 └── styles.css
+```
 
-Minimal, human-maintainable architecture.
-No folder explosion. No unnecessary abstraction.
+---
 
-🛠 Demo Credentials
-HOD
-
+## 🔐 Demo Credentials
+### 🏢 HOD
+```
 Email: btechcsehod@vit.ac.in
-
 Password: hodpass
-
-Faculty
-
+```
+### 👨‍🏫 Faculty
+```
 Email format: <fullname lowercase>@vitfaculty.ac.in
 Example: rajeshkumar@vitfaculty.ac.in
-
 Password: any 5+ characters
-
-Student
-
+```
+### 🎓 Student
+```
 Login using Registration Number (e.g., 21BCE1001)
 Password: any 5+ characters
+```
 
-⚡ Performance Considerations
+---
 
-Memoized analytics consumers
+## ⚡ Performance Considerations
 
-No layout shift during navigation
+- Memoized analytics consumers
 
-Optimized heatmap rendering
+- No layout shift during navigation
 
-No unnecessary re-renders
+- Optimized heatmap rendering (250 cells)
 
-Zero console warnings
+- No unnecessary re-renders
 
-Interaction latency under 100ms
+- Zero console warnings
 
-🚀 Running Locally
+- Interaction latency under 100ms
+
+---
+
+## 🚀 Run Locally
+```bash
 npm install
 npm run dev
-
-To build production:
-
+```
+Build for production:
+```
 npm run build
 npm run preview
-📦 Deployment
+```
+
+---
+
+## 📦 Deployment
 
 Designed for zero-config deployment on:
 
-Vercel
+- Vercel
 
-Netlify
+- Netlify
 
-Any static hosting provider
+- Any static hosting provider
 
 Fully client-side. Works offline after first load.
 
-🧪 Engineering Highlights
+---
 
-Pure TypeScript analytics engine
+## 📄 License
 
-Deterministic grade calculation rules
+```
+MIT License
+```
 
-Strict permission gating
+---
 
-Store-driven recomputation lifecycle
-
-SaaS-style layout & UX polish
-
-📄 License
-
-MIT License — open for educational and demonstration purposes.
