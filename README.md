@@ -12,7 +12,7 @@ The system is designed incrementally with a strong focus on **clean architecture
 
 ---
 
-## 🎯 Core Product Philosophy
+## 🎯 Core Product Philosophy:
 
 This is **not** a marks viewer.
 
