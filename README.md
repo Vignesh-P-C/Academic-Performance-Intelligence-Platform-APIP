@@ -28,7 +28,7 @@ All intelligence is computed **client-side** using a pure TypeScript analytics e
 
 ---
 
-## 📊 Current Platform Features
+## 📊 Current Platform Features:
 
 - Role-based authentication system:
   - Student login via Registration Number
