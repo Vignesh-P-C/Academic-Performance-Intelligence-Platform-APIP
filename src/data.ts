@@ -245,7 +245,7 @@ function attachRanks(students: Student[]) {
 function buildStudents(): Student[] {
   return NAMES.map((name, i) => {
     const tier     = TIERS[i]
-    const regNo    = `21BCE${String(1001 + i).padStart(4, '0')}`
+    const regNo    = `24BCE${String(1001 + i).padStart(4, '0')}`
     const sem1     = makeSemester(rng(i * 9973  + 1_234_567), tier, 1)
     const sem2     = makeSemester(rng(i * 7919  + 7_654_321), tier, 2)
     const semesters = [sem1, sem2]
