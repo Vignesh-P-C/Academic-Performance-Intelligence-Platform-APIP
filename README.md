@@ -8,8 +8,17 @@ A browser-based **role-based academic analytics dashboard** built with React 18,
 
 ## 📸 Screenshots
 
+### Login Screen
+![Login Screen](./screenshots/login-page.png)
+
 ### HOD Dashboard
 ![HOD Dashboard](./screenshots/hod-dashboard.png)
+
+### Faculty Dashboard
+![Faculty Dashboard](./screenshots/faculty-dashboard.png)
+
+### Student Dashboard
+![Student Dashboard](./screenshots/student-dashboard.png)
 
 ---
 
