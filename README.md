@@ -1,3 +1,12 @@
+[![Live Demo](https://img.shields.io/badge/LIVE-DEMO-brightgreen?style=for-the-badge)](https://apip-dashboard.vercel.app/)
+![License](https://img.shields.io/badge/LICENSE-MIT-blue?style=for-the-badge)
+![React](https://img.shields.io/badge/REACT-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TYPESCRIPT-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Zustand](https://img.shields.io/badge/ZUSTAND-STATE-orange?style=for-the-badge)
+![Vite](https://img.shields.io/badge/VITE-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind](https://img.shields.io/badge/TAILWIND-CSS3-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JAVASCRIPT-ES2022-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
 # Academic Performance Intelligence Platform (APIP)
 
 **Version:** v1.0.0 &nbsp;|&nbsp; **License:** MIT &nbsp;|&nbsp; 🌐 [Live Demo](https://apip-dashboard.vercel.app/)
@@ -142,3 +151,11 @@ Fully client-side — no backend, no environment variables. Works offline after 
 - [Vercel](https://vercel.com) — recommended
 - [Netlify](https://netlify.com)
 - Any static hosting provider
+
+## License
+
+MIT — free to use, modify, and distribute.
+
+---
+
+*Made by Vignesh P C — <a href="https://github.com/Vignesh-P-C"><img src="screenshots/github.png" width="24" height="24"/></a>*
